@@ -3,32 +3,32 @@
         {
             "sku": "item0001",
             "name": "Crile - Hemostatic Clamp - Straight",
-            "price": "3.45"
+            "price": 3.45
         },
         {
             "sku": "item0002",
             "name": "Halstead - Mosquito Hemostatic Clamp - Curved",
-            "price": "3.16"
+            "price": 3.16
         },
         {
             "sku": "item0003",
             "name": "Mckesson - Tissue Forceps",
-            "price": "14.17"
+            "price": 14.17
         },
         {
             "sku": "item0004",
             "name": "Electrocautery",
-            "price": "1843.61"
+            "price": 1843.61
         },
         {
             "sku": "item0005",
             "name": "Needle Holder",
-            "price": "25.15"
+            "price": 25.15
         },
         {
             "sku": "item0006",
             "name": "Scalpel Blades #10",
-            "price": "9.99"
+            "price": 9.99
         }
     ]
 }
