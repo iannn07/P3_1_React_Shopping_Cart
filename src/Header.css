@@ -1,0 +1,5 @@
+.total-item-price-grid {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 5px;
+}

@@ -14,11 +14,7 @@ function App() {
       <Footer viewCart={viewCart} />
     </>
   )
-  return (
-    <div>
-
-    </div>
-  )
+  return content;
 }
 
 export default App

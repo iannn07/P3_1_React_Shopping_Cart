@@ -156,11 +156,11 @@ const UseCartContext = (initCartState: CartStateType) => {
   return { dispatch, REDUCER_ACTION, totalItems, totalPrice, cart };
 };
 
-// Define the type for user cart context
-export type UserCartContextType = ReturnType<typeof UseCartContext>;
+// Define the type for use cart context
+export type UseCartContextType = ReturnType<typeof UseCartContext>;
 
-// Initialize the user cart context state
-const initCartContextState: UserCartContextType = {
+// Initialize the use cart context state
+const initCartContextState: UseCartContextType = {
   dispatch: () => {},
   REDUCER_ACTION: REDUCER_ACTION_TYPE,
   totalItems: 0,
@@ -168,9 +168,9 @@ const initCartContextState: UserCartContextType = {
   cart: [],
 };
 
-// Create the user cart context
+// Create the use cart context
 export const CartContext =
-  createContext<UserCartContextType>(initCartContextState);
+  createContext<UseCartContextType>(initCartContextState);
 
 // Define the type for children components
 type ChildrenType = {
