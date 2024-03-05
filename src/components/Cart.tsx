@@ -3,15 +3,11 @@ import { useState } from "react";
 import CartLineItem from "./CartLineItem";
 
 const Cart = () => {
-  const [isClicked, setIsClicked] = useState<boolean>(false);
   const [confirm, setConfirm] = useState<boolean>(false);
   const { dispatch, REDUCER_ACTION, totalItems, totalPrice, cart } = useCart();
   const onSubmitOrder = () => {
     dispatch({ type: REDUCER_ACTION.SUBMIT });
     setConfirm(true);
-    setTimeout(() => {
-      setIsClicked(true);
-    }, 250);
   };
   const pageContent = confirm ? (
     <h2>Thank you for your order</h2>
@@ -47,7 +43,7 @@ const Cart = () => {
           </div>
         </div>
         <button
-          className={`cart__submit ${isClicked ? "clicked" : ""}`}
+          className="cart__submit"
           disabled={!totalItems}
           onClick={onSubmitOrder}
         >
