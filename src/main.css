@@ -1,0 +1,17 @@
+.total-item-price-grid {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 5px;
+}
+
+.product__img {
+  min-width: 280px;
+  min-height: 280px;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+
+.cart__submit{
+  width: 500px;
+}
