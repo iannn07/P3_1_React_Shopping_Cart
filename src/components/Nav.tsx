@@ -4,9 +4,9 @@ const Nav = ({ viewCart, setViewCart }: PropsType) => {
 
   // Creating the button event
   const button = viewCart ? (
-    <button onClick={() => setViewCart(false)}>View Products</button>
+    <button onClick={() => setViewCart(false)} className="btn">View Products 📃</button>
   ) : (
-    <button onClick={() => setViewCart(true)}>View Cart</button>
+    <button onClick={() => setViewCart(true)} className="btn">View Cart 🛒</button>
   );
 
   // Creating the navbar for the View Cart Button

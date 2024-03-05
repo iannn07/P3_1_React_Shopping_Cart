@@ -2,7 +2,7 @@ import useCart from "../hooks/useCart";
 
 type PropsType = {
   viewCart: boolean;
-}
+};
 
 const Footer = ({ viewCart }: PropsType) => {
   // Total Item & Total Price Display
@@ -16,14 +16,26 @@ const Footer = ({ viewCart }: PropsType) => {
     <p>I Need Coffee &copy; {year}</p>
   ) : (
     <>
-      <p>Total Items: {totalItems}</p>
-      <p>Total Cost: {totalPrice}</p>
-      <p>I Need Coffee &copy; {year}</p>
+      <div className="total-item-price-grid">
+        <div>
+          <p>
+            <strong>Total Items</strong>
+          </p>
+          <p>
+            <strong>Total Cost</strong>
+          </p>
+        </div>
+        <div>
+          <p>{totalItems}</p>
+          <p>{totalPrice}</p>
+        </div>
+      </div>
+      <p className="copyright">I Need Coffee &copy; {year}</p>
     </>
   );
 
   const footerWrapper = <footer className="footer">{content}</footer>;
-  
+
   return footerWrapper;
 };
 
